@@ -55,8 +55,6 @@ public class Picture
         sun.moveVertical(120);
         sun.changeSize(80);
         sun.makeVisible();
-        
-        sun.slowMoveVertical(-120);
          
         floor = new Square();
         floor.changeColor("green");
@@ -67,7 +65,11 @@ public class Picture
         
         sun.slowMoveVertical(-120);
     }
-
+    
+    public void atardecer(){
+        sun.slowMoveVertical(12000);
+    }
+    
     /**
      * Change this picture to black/white display
      */
